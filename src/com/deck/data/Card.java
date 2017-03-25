@@ -12,7 +12,17 @@ package com.deck.data;
 public class Card {
     private String suit;    //each card has a suit
     private String rank;    //Each card has a rank
-
+    private String colour;  //Easier card has a colour, calculated by ruit
+    public Card(String s, String r){
+        this.suit = s;
+        this.rank = r;
+        if ((s.equalsIgnoreCase("clubs"))||(s.equalsIgnoreCase("spades"))){
+            this.colour = "black";
+        }
+        else{
+            this.colour = "red";
+        }
+    }
     public String getSuit() {
         return suit;
     }
