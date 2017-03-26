@@ -17,10 +17,10 @@ public class Card {
         this.suit = s;
         this.rank = r;
         if ((s.equalsIgnoreCase("clubs"))||(s.equalsIgnoreCase("spades"))){
-            this.colour = "black";
+            this.colour = "black";  //assigns black if suit is spades or clubs
         }
         else{
-            this.colour = "red";
+            this.colour = "red";    //assigns red if not clubs or spades
         }
     }
     public String getSuit() {
